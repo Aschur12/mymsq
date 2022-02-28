@@ -1,6 +1,7 @@
-export function kurses_usd () {
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var xhr = new XMLHttpRequest();
+function kurses_usd () {
 	let kurs_usd;
-	const xhr = new XMLHttpRequest();
 	const url = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
 	xhr.open('get', url, false);
 	xhr.send();
@@ -12,3 +13,4 @@ export function kurses_usd () {
 	})
 	return kurs_usd;
 };
+module.exports = {kurses_usd};
