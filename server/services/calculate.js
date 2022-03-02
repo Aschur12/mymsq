@@ -1,8 +1,10 @@
-const k_usd = require('./k_usd.js');
-let usd_kurs_nbu = k_usd.kurses_usd();
+const {kurses_usd} = require('./k_usd.js');
+const {kurses_euro} = require('./k_euro');
+
+const kursUSD = kurses_usd();
+const kursEURO = kurses_euro();
 
 
 
 
-
-module.exports = {usd_kurs_nbu};
+module.exports = {kursUSD, kursEURO};

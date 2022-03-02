@@ -45,3 +45,19 @@
     border-width: 1px;
     border-radius: 20px;
 }
+.usd_kurs_NBU {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 24px;
+    color: #0a58ca;
+    margin: 0 auto;
+}
+.euro_kurs_NBU {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 24px;
+    color: #0a58ca;
+    margin: 0 auto;
+}
